@@ -17,3 +17,14 @@ h3.addEventListener('mouseover', () =>{
     
 });
 // ### 3. Quand on clique sur le paragraphe le fond devient bleu et le texte gold, mais si le fond et déjà bleu et le texte déjà gold alors le fond redevient blanc et le texte noir
+let p = document.querySelector('p');
+p.addEventListener('click', () =>{
+    if(p.style.backgroundColor == 'blue'){
+        p.style.backgroundColor = 'white';
+        p.style.color = 'black';
+    } else{
+        p.style.backgroundColor = 'blue';
+        p.style.color = 'gold';
+    }
+    
+})
