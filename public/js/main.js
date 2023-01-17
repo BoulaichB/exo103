@@ -10,4 +10,10 @@ h1.addEventListener('dblclick', () => {
     h1.style.color = 'white';
 })
 // ### 2. Au hover du h3, son texte rétrécit d'un caractère 
+let h3 = document.querySelector('h3');
+h3.addEventListener('mouseover', () =>{
+    h3.style.color = 'red';
+    h3.style.fontSize = '1.1rem';
+    
+});
 // ### 3. Quand on clique sur le paragraphe le fond devient bleu et le texte gold, mais si le fond et déjà bleu et le texte déjà gold alors le fond redevient blanc et le texte noir
